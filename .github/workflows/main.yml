@@ -11,11 +11,11 @@ jobs:
   runs-on: windows-latest
   steps:
   - run: date
-macos:
- runs-on: macos:latest
- steps: 
- - run: date
-depends:
+ macos:
+  runs-on: macos:latest
+  steps: 
+  - run: date
+ depends:
   needs: [ubuntu,windows,macos]
   runs-on: macos-latest
   steps:
